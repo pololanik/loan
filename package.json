@@ -1,0 +1,50 @@
+{
+  "name": "zaplo",
+  "version": "0.1.0",
+  "description": "Zaplo: pohovor",
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^6.2.0",
+    "browserify": "^11.0.1",
+    "gulp": "^3.8.7",
+    "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.6",
+    "jest-cli": "^0.4.3",
+    "reactify": "^1.1.1",
+    "require-dir": "^0.3.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
+  },
+  "scripts": {
+    "dev": "gulp --type dev",
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "eslint src/js",
+    "test_stores": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ]
+  },
+  "dependencies": {
+    "babel-eslint": "^4.0.10",
+    "connect-modrewrite" : "^0.8.2",
+    "eslint": "^1.2.1",
+    "eslint-plugin-react": "^3.2.3",
+    "flux": "^2.1.1",
+    "object-assign": "^4.0.1",
+    "react": "^0.13.3",
+    "jquery": "^2.1.4",
+    "express": "^4.13.3"
+  }
+}

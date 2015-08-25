@@ -1,0 +1,62 @@
+@import "./normalize.css";
+
+$primary-color: green;
+
+h1 {
+  color: $primary-color;
+}
+
+li.task {
+  list-style-type: none;
+
+  label {
+    padding: 0 10px;
+  }
+}
+
+.slider {
+  height: 80px;
+
+  position: relative;
+
+  .meter {
+    height: 20px;
+    background: grey;
+  }
+
+  .topLayer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    cursor: pointer;
+    height: 20px;
+
+  }
+
+  select {
+    position: relative;
+    top: 30px;
+  }
+
+  .handle {
+    top: 0;
+    cursor: pointer;
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    margin-left: -2px;
+    background: red;
+  }
+
+  .min, .max {
+    position: absolute;
+    top: 20px;
+  }
+  .max {
+    right: 0;
+  }
+  .min {
+    left: 0
+  }
+}
+
